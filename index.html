@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout — devChallenges</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-viewport">
+        <header class="app-header">
+            <h1>Checkout</h1>
+            <span class="badge">3 ITEMS</span>
+        </header>
+
+        <main class="checkout-card">
+            
+            <section class="summary-section">
+                
+                <div class="product-card">
+                    <div class="img-wrapper">
+                        <img src="assets/iphone-12-pro.jpg" alt="iPhone 12 Pro" class="product-image">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-header">
+                            <h3>iPhone 12 Pro</h3>
+                            <span class="product-price">$999.00</span>
+                        </div>
+                        <p class="product-meta">Golden</p>
+                        <div class="product-footer">
+                            <span class="product-qty">x 1</span>
+                            <button type="button" class="remove-btn" aria-label="Remove item">&times;</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="img-wrapper">
+                        <img src="assets/apple-watch.jpg" alt="Apple Watch" class="product-image">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-header">
+                            <h3>Apple Watch</h3>
+                            <span class="product-price">$399.00</span>
+                        </div>
+                        <p class="product-meta">Blue</p>
+                        <div class="product-footer">
+                            <span class="product-qty">x 1</span>
+                            <button type="button" class="remove-btn" aria-label="Remove item">&times;</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="img-wrapper">
+                        <img src="assets/imac.jpg" alt="iMac" class="product-image">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-header">
+                            <h3>iMac</h3>
+                            <span class="product-price">$1199.00</span>
+                        </div>
+                        <p class="product-meta">Green</p>
+                        <div class="product-footer">
+                            <span class="product-qty">x 1</span>
+                            <button type="button" class="remove-btn" aria-label="Remove item">&times;</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="coupon-container">
+                    <input type="text" placeholder="Enter coupon code" class="coupon-input">
+                    <button type="button" class="coupon-btn">Apply Coupon</button>
+                </div>
+
+                <div class="cost-breakdown">
+                    <div class="cost-row">
+                        <span>Sub total</span>
+                        <span>$2597.00</span>
+                    </div>
+                    <div class="cost-row">
+                        <span>Tax</span>
+                        <span>$623.28</span>
+                    </div>
+                    <div class="cost-row cost-total">
+                        <span>Total</span>
+                        <span>$3220.28</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="checkout-form-section">
+                <h2>Contact Information</h2>
+                <form class="checkout-form">
+                    
+                    <div class="field">
+                        <label for="full-name">First & Last name</label>
+                        <input type="text" id="full-name" required placeholder="Enter first & last name">
+                    </div>
+
+                    <div class="field">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" required placeholder="Enter email address">
+                    </div>
+
+                    <div class="field">
+                        <label for="country">Country</label>
+                        <select id="country" required class="select-input">
+                            <option value="Sweden" selected>Sweden</option>
+                            <option value="United States">United States</option>
+                            <option value="United Kingdom">United Kingdom</option>
+                            <option value="Australia">Australia</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Continue</button>
+                </form>
+            </section>
+
+        </main>
+    </div>
+
+</body>
+</html>
